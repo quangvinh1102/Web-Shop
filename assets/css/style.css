@@ -27,6 +27,12 @@ html{
 
     clear: both;
 }
+.pt-18 {
+    padding: 0 18px !important;
+}
+.ptop-30 {
+    padding-top: 30px !important;
+}
 .text-while{
     color: #fff !important;
 }
@@ -68,18 +74,16 @@ html{
     background-color: red;
     position: fixed;
     z-index: 1;
-
+    overflow: hidden;
 }
 #nav{
-    position: fixed;
-    display: inline-block;
+    position: relative;
 
 }
 
 #nav li {
 
     display: inline-block;
-    position: relative;
 
 }
 #nav > li > a{
@@ -90,10 +94,10 @@ html{
     color: black;
     text-decoration: none;
     line-height: 46px;
-    padding: 0 24px;
-    display: inline-block;
-
+    padding: 0 24px;  
+    display: block;
 }
+
 #nav li:hover .subnav{
 
     display: block;
@@ -104,28 +108,42 @@ html{
 }
 #nav .subnav{
     position: absolute;
-    background-color: #fff;
+    background-color: red;
     height: 100px;
     width: 150px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     display: none;
 }
+#nav .subnav li a {
+    width: 150px;
+    height: 50px;
+}
+
+
+
+.subnav li {
+    height: 50px;
+}
 #nav .nav-arrow-down{
     font-size: 14px ;
 
 }
+#phandau .mobile-menu-btn,
 #phandau .search-btn{
     float: right;
     padding: 0 16px;
-    
+    position: fixed;
+    top: 0;
+    right: 0;
 }
-
+#phandau .menu-icon,
 #phandau .search-icon{
     color: black;
     font-size: 20px;
     line-height: 46px;
     
 }
+#phandau .mobile-menu-btn,
 #phandau .search-btn:hover{
     background-color:white;
 }
@@ -134,7 +152,7 @@ html{
     position: relative; 
     margin-top: 46px;
     padding-top: 50%;
-    background: url('/assets/img/phanslider/slider1.jpg') top center / cover no-repeat;
+    background: url('../img/phanslider/slider1.jpg') top center / cover no-repeat;
 }
 
 #phansiler .text-conten{
@@ -157,6 +175,8 @@ html{
 
 #noidung .conten-section{
     width: 800px;
+    padding-top: 30px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 64px 0;
@@ -199,9 +219,12 @@ html{
     padding-top: 32px;
 }
 #noidung .fas-img{
-    border-radius: 31px;
-    
+    border-radius: 31px;   
 }
+#noidung .fas-img:hover{
+    transform: scale(0.95);
+}
+
 /*CO So*/
 #noidung .tour-section{
     background-color: #000;
@@ -234,10 +257,8 @@ html{
 }
 
 .place-list{
-
+    margin-left: 16px;
     margin-top: 32px;
-    margin-left: -16px;
-    margin-right: 32px;
     padding-bottom: 40px;
 }
 .place-item{
@@ -251,11 +272,11 @@ html{
 
 }
 .place-img2{
-    width: 113%;
+    width: 100%;
     display: block;
-    
-
+    height: 258px;
 }
+
 .place-img1:hover,.place-img2:hover{
     opacity: 0.6;
 }
@@ -268,7 +289,7 @@ html{
 }
 .place-body2{
     background-color: #fff;
-    width: 113%;
+    
     padding: 16px;
     font-size: 15px;
 }

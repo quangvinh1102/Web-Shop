@@ -1,0 +1,104 @@
+                                /* RESPONSIVE */
+
+/* PC */
+@media (min-width: 1024px) {
+    #faswoman img {
+        width: 799px;
+    }
+    .mobile-menu-btn{
+        display: none;
+    }
+    
+}
+
+/* Tablet & Mobile */
+@media (max-width: 1023px) {
+
+
+
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .mobile-menu-btn{
+        display: none;
+    }
+    
+    #nav li a {
+        padding: 0 15px;
+    }
+    #phandau .search-btn {
+        display: none;
+    }
+
+    .fashion {
+        text-align: center;
+    }
+
+    .fashion img {
+        width: 88%;
+    }
+    
+    .place-img2 {
+        width: -webkit-fill-available;
+        height: 246px;
+        
+    }
+
+    .place-list {
+        margin-top: 32px;
+        padding-bottom: 40px;
+    }
+
+    div.place-body2 {
+        width: 100%;
+    }
+
+    #faswoman img {
+        width: 88%;
+    }
+    #faswoman img {
+        width: 675.83px;
+    }
+    .place-go-gg {
+        width: 300px;
+        text-align: center;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 740px) {
+    #nav li {
+        display: block;
+    }
+
+    #phandau .search-btn {
+        display: none;
+    }
+    #noidung .fas-img {
+        max-width: 100%;
+    }
+
+    .place-item {
+        width: 100%;
+        margin: 18px 10px;
+    }
+    .place-go-gg {
+        width: 100%;
+        text-align: center;
+    }
+    .col-hafl {
+        width: 100%;
+    }
+    .contact-info {
+        margin-left: 15px;
+    }
+    .contact-form {
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+
+
+
+}
